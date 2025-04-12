@@ -1,0 +1,3 @@
+git add .
+git commit -m "Upadted index.html"
+git push
