@@ -3,42 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pranav Verma | Projects</title>
+  <title>Projects | Pranav Verma</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 text-white p-6 text-center shadow">
-    <h1 class="text-4xl font-bold">My Projects</h1>
-    <p class="text-lg mt-2">Explore my work — from web apps to creative experiments.</p>
-    <a href="index.html" class="inline-block mt-4 text-sm bg-white text-indigo-600 px-4 py-2 rounded-full hover:bg-gray-100 transition">← Back to Home</a>
+<body class="bg-slate-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-indigo-700 text-white py-6 px-4 shadow-md text-center">
+    <h1 class="text-4xl font-bold mb-2">Projects</h1>
+    <p class="text-lg font-light">Explore the work I've done across software, web, and AI.</p>
+    <a href="index.html" class="inline-block mt-4 text-white underline text-sm hover:text-gray-200">← Back to Home</a>
   </header>
 
-  <main class="p-10 max-w-6xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- Project Card -->
-      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
-        <h2 class="text-2xl font-bold text-indigo-600">Wlugo - Course Rating Platform</h2>
-        <p class="mt-2 text-gray-700">A full-stack web application for students to rate and review courses at Wilfrid Laurier University. Built with Node.js, Express, MongoDB, and Tailwind CSS.</p>
-        <div class="mt-4 flex space-x-4">
-          <a href="https://wlugo.com" target="_blank" class="text-indigo-500 hover:underline">Live Site</a>
-          <a href="https://github.com/yourusername/wlugo" target="_blank" class="text-gray-600 hover:underline">GitHub Repo</a>
-        </div>
-      </div>
-
-      <!-- Duplicate and edit for more projects -->
-      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
-        <h2 class="text-2xl font-bold text-indigo-600">AR Foodland Ontario</h2>
-        <p class="mt-2 text-gray-700">An augmented reality application using JavaScript and Blender to visualize local produce data in 3D. Designed for educational outreach and mobile interaction.</p>
-        <div class="mt-4 flex space-x-4">
-          <a href="#" target="_blank" class="text-indigo-500 hover:underline">Live Demo</a>
-          <a href="https://github.com/yourusername/ar-foodland" target="_blank" class="text-gray-600 hover:underline">GitHub Repo</a>
-        </div>
-      </div>
+  <!-- Projects Grid -->
+  <section class="p-10 max-w-6xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up">
+    
+    <!-- Example Project Card -->
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+      <h2 class="text-2xl font-semibold text-indigo-600">StockAhead</h2>
+      <p class="mt-2 text-gray-700">A Python-based stock prediction tool using random forest algorithms for forecasting.</p>
+      <a href="https://github.com/pranav-verma20/stockahead" class="mt-4 inline-block text-indigo-500 hover:underline">View on GitHub →</a>
     </div>
-  </main>
 
-  <footer class="text-center p-6 bg-gray-100 text-sm text-gray-600 mt-10">
-    &copy; 2025 Pranav Verma. Built with 💻 & Tailwind CSS.
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+      <h2 class="text-2xl font-semibold text-indigo-600">AR Foodland</h2>
+      <p class="mt-2 text-gray-700">An augmented reality app for Foodland Ontario produce, built using JS and Blender.</p>
+      <a href="https://github.com/pranav-verma20/ar-foodland" class="mt-4 inline-block text-indigo-500 hover:underline">View on GitHub →</a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+      <h2 class="text-2xl font-semibold text-indigo-600">Wlugo</h2>
+      <p class="mt-2 text-gray-700">A course-rating platform with a Node.js backend and a modern front-end UI.</p>
+      <a href="https://github.com/pranav-verma20/wlugo" class="mt-4 inline-block text-indigo-500 hover:underline">View on GitHub →</a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+      <h2 class="text-2xl font-semibold text-indigo-600">Inventory System</h2>
+      <p class="mt-2 text-gray-700">A full-stack inventory management system using Java, MySQL, and PHP.</p>
+      <a href="https://github.com/pranav-verma20/inventory-system" class="mt-4 inline-block text-indigo-500 hover:underline">View on GitHub →</a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+      <h2 class="text-2xl font-semibold text-indigo-600">C++ Tetris</h2>
+      <p class="mt-2 text-gray-700">A console-based Tetris game using C++ demonstrating game loop and graphics logic.</p>
+      <a href="https://github.com/pranav-verma20/cpp-tetris" class="mt-4 inline-block text-indigo-500 hover:underline">View on GitHub →</a>
+    </div>
+
+    <!-- Add more projects here if you want -->
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 mt-10 bg-gray-900 text-white">
+    <p>&copy; 2025 Pranav Verma. All rights reserved.</p>
   </footer>
+
+  <!-- AOS + Icons -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800 });</script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
